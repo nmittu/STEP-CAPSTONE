@@ -100,7 +100,7 @@
         <configuration>
           <!-- TODO: set project ID. -->
           <deploy.projectId>fulfillment-deco-step-2020</deploy.projectId>
-          <deploy.version>1</deploy.version>
+          <deploy.version>a2</deploy.version>
         </configuration>
       </plugin>
 

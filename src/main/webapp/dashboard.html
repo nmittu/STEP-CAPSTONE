@@ -9,20 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <meta charset="UTF-8">
     <title>Capstone</title>
-    <link rel="stylesheet" href="homepage.css">
-    <script src="homepage.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
   </head>
-  
-  <body onload="start()">
-    <div class="bg">
-      <h1>Landing Page</h1>
-      
-      <!--Provide sign in options for the user-->
-      <div id="firebaseui-auth-container"></div>
-      
-      <button id="signout" class="button button1" onclick="logout()">Logout</button>
-    </div>
+
+  <body>
+    <h1>Admin Dashboard</h1>
+    <div id="line-chart" style="width: 900px; height: 500px"></div>
+    <form action="/add-ta" method="POST"> 
+      <label for="TAemail">Enter a TA's email to add them to the class:</label><br>
+      <input type="text" id="taEmail" name="taEmail"><br>
+      <input type="submit" value="Submit">
+    </form> 
   </body>
 </html>
